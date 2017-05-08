@@ -1,0 +1,5 @@
+_navigateTo("http://localhost:4200/ram");
+_setValue(_textbox("SelectedMonth"), "17");
+_assertExists(_div("Enter Valid Account Month in YYMM format"));
+_assertVisible(_div("Enter Valid Account Month in YYMM format"));
+_assertEqual("Enter Valid Account Month in YYMM format", _getText(_div("Enter Valid Account Month in YYMM format")));
